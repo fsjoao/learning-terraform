@@ -9,7 +9,7 @@ variable "amis" {
 
 variable "cdirs_acesso_remoto" {
     type = "list"
-    default = ["191.176.44.154/32"]
+    default = ["YOUR PUBLIC IP HERE"]
 }
 
 variable "key_name" {
