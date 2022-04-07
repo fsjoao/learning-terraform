@@ -63,6 +63,7 @@ resource "aws_instance" "dev6" {
   vpc_security_group_ids = ["${aws_security_group.acesso-ssh-us-east-2.id}"]
 }
 
-
+#if wants to destroy some instance, use "terraform destroy -target #NAME-OF0-THE-INSTANCE-HERE-SOMETHING-LIKE-AWS_INSTANCE.DEV4#"
+#if you have sure, like sure 4REAL, apply "terraform destroy", and will destroy every instance it haves."
 
 #
