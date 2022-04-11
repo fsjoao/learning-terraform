@@ -1,4 +1,4 @@
-variable "amis" {
+variable amis {
     type = map
 
     default = {
@@ -7,12 +7,12 @@ variable "amis" {
     }
 }
 
-variable "cdirs_acesso_remoto" {
-    type = "list"
+variable cdirs_acesso_remoto {
+    type = list
     default = ["PUBLIC-IP-HERE"]
 }
 
-variable "key_name" {
-    default = "terraform-aws"
+variable key_name {
+    default = terraform-aws
   
 }

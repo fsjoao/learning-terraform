@@ -30,6 +30,16 @@ resource "aws_instance" "dev" {
 #           terraform show #show everything
 #           aws ec2 describe-security-groups --see with cli
 
+
+resource "aws_s3_bucket" "homologacao" {
+  bucket = "organization-homologacao"
+  acl    = "private"
+
+  tags = {
+    "Name" = "organization-homologacao"
+  }
+}
+
 resource "aws_instance" "dev4" {
   ami = "ami-0e472ba40eb589f49"
   instance_type = "t2.micro"
